@@ -10,7 +10,7 @@
     "image-resizer": "./bin/image-resizer.js"
   },
   "author": "Tim van Scherpenzeel",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^4.18.1",
     "eslint-config-airbnb-base": "^12.1.0",
