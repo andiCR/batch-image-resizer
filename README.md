@@ -25,6 +25,18 @@ Specific file
 $ node ./bin/image-resizer.js -i ./input/example.png -o ./output/example.png -s "[50, 500, 1000, 1500]"
 ```
 
+Which in turn creates
+```sh
+input
+└── example.jpg
+
+output
+├── example-1000w.jpg
+├── example-1500w.jpg
+├── example-500w.jpg
+└── example-50w.jpg
+```
+
 ## Flags
 
 ### Default
