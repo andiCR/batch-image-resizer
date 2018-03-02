@@ -16,28 +16,50 @@ $ npm install
 
 ## Example
 
-Using `-s` flag followed by an array of numbers one can specify the image sizes wants to resize their image to.
+Using the `-s` flag followed by an array of numbers one can specify (in pixels) the image sizes one wants to resize their image(s) to.
 
-These sizes can be passed to a glob where all compatible files in a nested folder structure are found and converted to the specified formats. The folder structure of the input folder is retained in the output folder.
+The input flag `-i` takes either a single parent directory or a single file. The script will recursivly find a copy all suitable input files in all child directories. The folder structure of the input folder is retained in the output folder. Please note that this does not happen in-place but rather in the output directory.
+
+Running the following command turns
 ```sh
 $ node ./bin/batch-image-resizer.js -i ./input -o ./output -s "[50, 500, 1000, 1500]"
 ```
 
-Alternatively one can specify a single file to convert
+This as input (root with a single image, a parent folder which has a single image and a child folder of the parent which contains a single image).
+
 ```sh
-$ node ./bin/batch-image-resizer.js -i ./input/example.png -o ./output/example.png -s "[50, 500, 1000, 1500]"
+root
+├── example-1.jpg
+└── parent
+    ├── child
+    │   └── example-3.jpg
+    └── example-2.jpg
 ```
 
-Which in turn creates
-```sh
-input
-└── example.jpg
+Will generate this as output (root with single image converted in various formats, a parent folder which contains a single image converted in various formats and a child folder of the parent which contains a single image converted in various formats).
 
-output
-├── example-1000w.jpg
-├── example-1500w.jpg
-├── example-500w.jpg
-└── example-50w.jpg
+```sh
+root
+├── example-1-1000w.jpg
+├── example-1-1500w.jpg
+├── example-1-500w.jpg
+├── example-1-50w.jpg
+└── parent
+    ├── child
+    │   ├── example-3-1000w.jpg
+    │   ├── example-3-1500w.jpg
+    │   ├── example-3-500w.jpg
+    │   └── example-3-50w.jpg
+    ├── example-2-1000w.jpg
+    ├── example-2-1500w.jpg
+    ├── example-2-500w.jpg
+    └── example-2-50w.jpg
+```
+
+Alternatively one could specify a sinlge file as input rather than a directory.
+
+```sh
+$ node ./bin/batch-image-resizer.js -i ./input/example.png -o ./output/example.png -s "[50, 500, 1000, 1500]"
 ```
 
 ## Flags
