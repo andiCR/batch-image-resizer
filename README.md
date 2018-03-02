@@ -15,6 +15,18 @@ $ npm install
 
 ## Example
 
+Using `-s` flag followed by an array of numbers one can specify the image sizes wants to resize their image to.
+
+These sizes can be passed to a glob where all compatible files in a nested folder structure are found and converted to the specified formats. The folder structure of the input folder is retained in the output folder.
+```sh
+$ node ./bin/batch-image-resizer.js -i ./input -o ./output -s "[50, 500, 1000, 1500]"
+```
+
+Alternatively one can specify a single file to convert
+```sh
+$ node ./bin/batch-image-resizer.js -i ./input/example.png -o ./output/example.png -s "[50, 500, 1000, 1500]"
+```
+
 Which in turn creates
 ```sh
 input
@@ -25,16 +37,6 @@ output
 ├── example-1500w.jpg
 ├── example-500w.jpg
 └── example-50w.jpg
-```
-
-Directory glob
-```sh
-$ node ./bin/batch-image-resizer.js -i ./input -o ./output -s "[50, 500, 1000, 1500]"
-```
-
-Specific file
-```sh
-$ node ./bin/batch-image-resizer.js -i ./input/example.png -o ./output/example.png -s "[50, 500, 1000, 1500]"
 ```
 
 ## Flags
