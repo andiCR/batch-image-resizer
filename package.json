@@ -4,7 +4,8 @@
   "description": "CLI tool for resizing and optimising images.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint lib/**/*.js"
+    "lint": "eslint lib/**/*.js",
+    "deploy": "npm version patch && npm publish && git push origin"
   },
   "bin": {
     "batch-image-resizer": "./bin/batch-image-resizer.js"
