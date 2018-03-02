@@ -1,5 +1,6 @@
 # Batch image resizer
 
+[![npm version](https://badge.fury.io/js/batch-image-resizer.svg)](https://badge.fury.io/js/batch-image-resizer)
 [![dependencies](https://david-dm.org/timvanscherpenzeel/batch-image-resizer.svg)](https://david-dm.org/timvanscherpenzeel/batch-image-resizer)
 [![devDependencies](https://david-dm.org/timvanscherpenzeel/batch-image-resizer/dev-status.svg)](https://david-dm.org/timvanscherpenzeel/batch-image-resizer#info=devDependencies)
 
