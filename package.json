@@ -1,5 +1,5 @@
 {
-  "name": "image-resizer",
+  "name": "batch-image-resizer",
   "version": "0.0.1",
   "description": "CLI tool for resizing and optimising images.",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "lint": "eslint lib/**/*.js"
   },
   "bin": {
-    "image-resizer": "./bin/image-resizer.js"
+    "batch-image-resizer": "./bin/batch-image-resizer.js"
   },
   "author": "Tim van Scherpenzeel",
   "license": "MIT",

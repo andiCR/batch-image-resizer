@@ -1,7 +1,7 @@
-# Image resizer
+# Batch image resizer
 
-[![dependencies](https://david-dm.org/timvanscherpenzeel/image-resizer.svg)](https://david-dm.org/timvanscherpenzeel/image-resizer)
-[![devDependencies](https://david-dm.org/timvanscherpenzeel/image-resizer/dev-status.svg)](https://david-dm.org/timvanscherpenzeel/image-resizer#info=devDependencies)
+[![dependencies](https://david-dm.org/timvanscherpenzeel/batch-image-resizer.svg)](https://david-dm.org/timvanscherpenzeel/batch-image-resizer)
+[![devDependencies](https://david-dm.org/timvanscherpenzeel/batch-image-resizer/dev-status.svg)](https://david-dm.org/timvanscherpenzeel/batch-image-resizer#info=devDependencies)
 
 CLI tool for resizing images using [sharp](https://github.com/lovell/sharp) and optimising `jpg` and `png` files using [imagemin](https://github.com/imagemin/imagemin). The CLI tool does not require `imagemagick` or `graphicsmagick` to be installed.
 
@@ -15,16 +15,6 @@ $ npm install
 
 ## Example
 
-Directory glob
-```sh
-$ node ./bin/image-resizer.js -i ./input -o ./output -s "[50, 500, 1000, 1500]"
-```
-
-Specific file
-```sh
-$ node ./bin/image-resizer.js -i ./input/example.png -o ./output/example.png -s "[50, 500, 1000, 1500]"
-```
-
 Which in turn creates
 ```sh
 input
@@ -35,6 +25,16 @@ output
 ├── example-1500w.jpg
 ├── example-500w.jpg
 └── example-50w.jpg
+```
+
+Directory glob
+```sh
+$ node ./bin/batch-image-resizer.js -i ./input -o ./output -s "[50, 500, 1000, 1500]"
+```
+
+Specific file
+```sh
+$ node ./bin/batch-image-resizer.js -i ./input/example.png -o ./output/example.png -s "[50, 500, 1000, 1500]"
 ```
 
 ## Flags
@@ -68,4 +68,4 @@ output
 
 ## Licence
 
-My work is released under the [MIT license](https://raw.githubusercontent.com/TimvanScherpenzeel/detect-features/master/LICENSE).
+My work is released under the [MIT license](https://raw.githubusercontent.com/TimvanScherpenzeel/batch-image-resizer/master/LICENSE).
