@@ -36,7 +36,7 @@ root
     └── example-2.jpg
 ```
 
-Will generate this as output (root with single image converted in various formats, a parent folder which contains a single image converted in various formats and a child folder of the parent which contains a single image converted in various formats).
+Will in turn generate this as output (root with single image converted in various formats, a parent folder which contains a single image converted in various formats and a child folder of the parent which contains a single image converted in various formats).
 
 ```sh
 root
@@ -56,7 +56,7 @@ root
     └── example-2-50w.jpg
 ```
 
-Alternatively one could specify a sinlge file as input rather than a directory.
+Alternatively one could specify a single file as input rather than a directory.
 
 ```sh
 $ node ./bin/batch-image-resizer.js -i ./input/example.png -o ./output/example.png -s "[50, 500, 1000, 1500]"
