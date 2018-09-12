@@ -1,6 +1,6 @@
 {
 	"name": "batch-image-resizer",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "CLI tool for resizing and optimising images.",
 	"main": "index.js",
 	"scripts": {
