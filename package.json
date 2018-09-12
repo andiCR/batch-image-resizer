@@ -4,7 +4,7 @@
 	"description": "CLI tool for resizing and optimising images.",
 	"main": "index.js",
 	"scripts": {
-		"lint": "eslint lib/**/*.js",
+		"lint": "eslint './lib/**/*.js' --ignore-pattern '!.eslintrc.js' .eslintrc.js",
 		"deploy": "npm version patch && npm publish && git push origin"
 	},
 	"bin": {
