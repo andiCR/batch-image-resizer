@@ -74,8 +74,8 @@ $ node ./bin/batch-image-resizer.js -i ./input/example.png -o ./output/example.p
 
 ### Optional
 	-s, --sizes [example: -s "[50, 500, 1000, 1500]"] [not required]
-    -f, --fit [not required] [fit to largest dimension, either width or height]
-    -k, --keep-name [not required] [do not rename files]
+	-f, --fit [fit to largest dimension, either width or height] [not required]
+	-k, --keep-name [do not rename files] [not required]
 
 ## Formats
 
