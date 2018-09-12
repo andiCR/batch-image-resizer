@@ -1,7 +1,7 @@
 {
 	"name": "batch-image-resizer",
 	"version": "0.0.3",
-	"description": "CLI tool for resizing and optimising images.",
+	"description": "CLI tool for resizing and optimizing images.",
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint './lib/**/*.js' --ignore-pattern '!.eslintrc.js' .eslintrc.js",

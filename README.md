@@ -4,7 +4,7 @@
 [![dependencies](https://david-dm.org/timvanscherpenzeel/batch-image-resizer.svg)](https://david-dm.org/timvanscherpenzeel/batch-image-resizer)
 [![devDependencies](https://david-dm.org/timvanscherpenzeel/batch-image-resizer/dev-status.svg)](https://david-dm.org/timvanscherpenzeel/batch-image-resizer#info=devDependencies)
 
-CLI tool for resizing images using [sharp](https://github.com/lovell/sharp) and optimising `jpg` and `png` files using [imagemin](https://github.com/imagemin/imagemin). The CLI tool does not require `imagemagick` or `graphicsmagick` to be installed.
+CLI tool for resizing images using [sharp](https://github.com/lovell/sharp) and optimizing `jpg` and `png` files using [imagemin](https://github.com/imagemin/imagemin). The CLI tool does not require `imagemagick` or `graphicsmagick` to be installed.
 
 Supports both single files as well as recursive file finding and processing using a glob pattern.
 
